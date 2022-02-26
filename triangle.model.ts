@@ -1,14 +1,12 @@
-import { Line } from './line.model';
+import { Coordinate } from './coordinate.model';
+import { Dot } from './dot.model';
 
+export class Triangle {
+  dot: Dot;
+  tri: Coordinate;
 
-export class Triangle{
-  line1 : Line;
-  line2 : Line;
-  line3 : Line;
-
-  constructor(line1 : Line,line2 : Line, line3 : Line){
-    this.line1 = line1;
-    this.line2 = line2;
-    this.line3 = line3;
+  constructor(dot: Dot, tri: Coordinate) {
+    this.dot = dot;
+    this.tri = tri;
   }
 }
